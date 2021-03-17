@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shofia Wedding</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+function showAlert() {
+  	alert("thankyou for registering.! you will contacted soon:)");
+  }
+</script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #9618B5;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #9618B5;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #9618B5;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background: linear-gradient(rgba(84, 188, 243 ,0.43), rgba( 194, 70, 247 ,0.23) ), url(atas.png);
+    background-size:cover;
+    height:680px;
+    color: #EFAFFD;
+    padding: 100px 200px;
+    margin-bottom: 0px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bgr {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: purple;
+    font-size: 50px;
+  }
+  .logo {
+    color: #f4511e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: purple;
+  }
+  .carousel-indicators li {
+    border-color: #aa22c5;
+  }
+  .carousel-indicators li.active {
+    background-color:  purple;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid purple; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+    width:300px;
+    margin-left:50px;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #C367F7;
+    background-color: #fff !important;
+    color: #763e81;
+  }
+  .panel-heading {
+    color:  #763e81  !important;
+    background-color: #C367F7 !important;
+    padding: 0px;
+    margin:0px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    margin-top: 5px;
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: none;
+    background-color: #763e81;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #9618B5;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .bas, .spe, .pla {
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.3333333;
+      border-radius: 6px;
+      background-color: white;
+  }
+  .modal-header {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  .btn:hover{
+      background-color: #C367F7;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+        <img style="width: 80px; height: 50px; padding-top: -5px;" src="logo.png">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">DOCUMENTATION</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1 style="color: #FFF"><b>Shofia Wedding Organizer</b></h1>
+  <p style="color: #FFF">Tasikmalaya, Indonesia</p> 
+  <br>
+  <h4 style="padding-top: -100px;color:white;">Your Satisfaction is Our Guarantee Hi Love Birds, Welcome to the Veramo Weddings website! 
+  As the best professional wedding planner and wedding planner, we are committed to making your special day perfect. Let's discover how we can assist you!</h4>
+  <br><br>
+  <h2 style="color: #FFF"> LET'S GET STARTED </h2>
+</div>
+
+    
+<!--it has different background graadient of every section-->
+
+<!-- ABOUT-->
+<div id="about" class="container-fluid" style="background: linear-gradient(to bottom right, pink, skyblue);">
+  <div class="row">
+    <div class="col-sm-8">
+        <h1 style="padding-top: 50px; margin-bottom: 0px;"><b>ABOUT</b></h1><br><br>
+      <h4 style="padding-top: -100px">Shofia Wedding Organizer is an organization located in Tasikmalaya, West Java which has the job to take care of the wedding event from start to finish, so customers don't have to worry about the smooth running of the event. With a strong reputation, our Wedding Planner has handled various traditional and international weddings in Indonesia </h4><br>
+      <h4>Shofia Wedding Planner has won a lot of trust from the public to take care of wedding events, whether in buildings, hotels or private homes. Realizing a dream marriage requires careful preparation. Shofia Weddings is ready to help from determining the theme, to the series of wedding events later.</h4><br>
+      <br>
+    </div>
+    <div class="col-sm-4" style="height: 400px;">
+        <img style="padding-top:150px;margin-left: 100px; width: 250px; height:400px;" src="cincin.png">
+    </div>
+  </div>
+</div>
+
+<!-- Service -->
+<div id="services" class="container-fluid text-center" style = "background: linear-gradient(to bottom left, skyblue, pink">
+  <h1>SERVICES</h1>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>The Wedding will be the most great Agenda</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Everyone will treated like a lover</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>The Agenda will handle well until done</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Always keep the cleaness and stay fresh</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>It is trusted by many people</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>HARD WORK</h4>
+      <p>Work wholeheartedly and exert every effort</p>
+    </div>
+  </div>
+</div>
+
+<!-- Documentation -->
+<div id="portfolio" class="container-fluid text-center bgr" style = "background: linear-gradient(to bottom right, pink, skyblue);">
+  <h1 style="margin-top:30px; margin-bottom:20px">DOCUMENTATION</h1>
+  <h4 style="margin-bottom:50px">These are decoration sample</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="satu.jpg" alt="Basic" style="width:400px; height:300px;">
+        <p><strong>Basic</strong></p>
+        <p>Basic Decoration</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="dua.jpg" alt="Special" style="width:400px; height:300px;">
+        <p><strong>Special</strong></p>
+        <p>Special Decoration</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="tiga.jpg" alt="Platinum" style="width:400px; height:300px;">
+        <p><strong>Platinum</strong></p>
+        <p>Platinum Decoration</p>
+      </div>
+    </div>
+  </div><br><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid" style="background: linear-gradient(to bottom left, skyblue, pink);">
+  <div class="text-center">
+      <h1 style="margin-top:7px; padding-bottom:10px">PRICING</h1>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 style="margin:0px; padding:10px">Basic</h2>
+        </div>
+        <div class="panel-body" style="padding-bottom:50px;">
+          <p><strong>100</strong> Capacity</p>
+          <p><strong>1</strong> Singer (without band)</p>
+          <p><strong>1</strong>Basic Wedding Cake</p>
+          <p><strong>2</strong> Brides Maid Make Up</p>
+          <p><strong>Basic</strong> Property</p>
+        </div>
+        <div class="panel-footer">
+          <h3>IDR 10.000.000</h3>
+          <h4>per 8 hours</h4>
+          <input type="submit" value="Basic" class="bas" data-toggle="modal" data-target="#myModal" name="actt">
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 style="margin:0px; padding:10px">Special</h2>
+        </div>
+        <div class="panel-body" style="padding-bottom:50px;">
+          <p><strong>400</strong> Capacity</p>
+          <p><strong>1</strong> Singer (with band) </p>
+          <p><strong>1</strong> Special wedding Cake</p> 
+          <p><strong>4</strong> Brides Maid Make Up</p>
+          <p><strong>High Level</strong> Property</p>
+        </div>
+        <div class="panel-footer">
+          <h3>IDR 15.000.000</h3>
+          <h4>per 8 hours</h4>
+          <input type="submit" value="Special" class="spe" data-toggle="modal" data-target="#myModal" name="actt">
+        </div>
+      </div>      
+    </div>     
+      
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 style="margin:0px; padding:10px">Platinum</h2>
+        </div>
+        <div class="panel-body">
+          <p><strong>1000</strong> Capacity</p>
+          <p><strong>2</strong> Singer (with band) </p>
+          <p><strong>1</strong> Traditional Ceremony + Dancer </p>
+          <p><strong>1</strong> Luxury wedding Cake</p> 
+          <p><strong>7</strong> Brides Maid Make Up</p>
+          <p><strong>Luxury</strong> Property</p>
+        </div>
+        <div class="panel-footer">
+          <h3>IDR 20.000.000</h3>
+          <h4>per 8 hours</h4>
+          <input type="submit" value="Platinum" class="pla" data-toggle="modal" data-target="#myModal" name="actt"> 
+        </div>
+      </div>      
+    </div>   
+      
+  </div>
+      <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-top:60px">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Booking Form</h4>
+        </div>
+        <div class="modal-body">
+         <form action="InputData" method="get" onsubmit="return showAlert()">
+                        <div class="form-group">
+                            <label> Name </label>
+                            <input type="text" class="form-control" name="fname" required="">
+                        </div>    
+                        <div class="form-group">
+                            <label> Type of Service </label><br>
+                            <b><input type="radio"  name="srv" value="basic" required="" id="bsc"/>Basic : IDR 10.000.000 </b> &ensp;
+                            <b><input type="radio"  name="srv" value="special" required="" id="spc"/>Special : IDR 15.000.000 </b> &ensp;
+                            <b><input type="radio"  name="srv" value="platinum" required="" id="plt"/>Platinum : IDR 20.000.000 </b>
+                        </div> 
+                       <div class="form-group">
+                            <label> Email </label>
+                            <input type="email" class="form-control" name="email" required="">  
+                        </div>  
+                       <div class="form-group">
+                            <label> Phone </label>
+                            <input type="tel" class="form-control" name="pphone" placeholder="08xx-xxxx-xxxx" pattern="08[0-9]{2}-[0-9]{4}-[0-9]{4}" required=""/>
+                        </div> 
+                        <div class="form-group">
+                            <label> Address </label>
+                            <input type="text" class="form-control" name="address" required="">
+                        </div>  
+                        <div class="form-group">
+                            <label> Payment Method </label><label style="margin-left:85px">Booking Date</label><label style="margin-left:65px">Terms and condition</label><br> 
+                        <select name="bank" style="width:170px;">
+                            <option value="bca"> BCA</option>
+                            <option value="mandiri" selected> MANDIRI</option>
+                            <option value="cimb">CIMB</option>
+                            <option value="bri">BRI</option>
+                        </select>
+                            <input type="date" name="date" max="2022-12-31" min="2021-01-06" style="margin-left:30px" required=""/>
+                            <input type="checkbox" id="agree" required=""  style="margin-left:33px"/>&ensp;user agreement
+                            <p>VA: 93820019283</p>
+                        </div>
+             
+             <button type="submit" id="dialog-ok" class="btn btn-default" >Book</button>          
+                    </form>
+      </div>
+      </div> </div></div></div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bgr" style = "background: linear-gradient(to bottom right, pink, skyblue);margin-top:0px;">
+    <br><br><br>
+    
+  <div class="row">
+    
+    <div class="col-sm-5" style="margin-top:70px;">
+    <h1 class="text-center" style="text-align:left; ">CONTACT</h1>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Tasikmalaya, Indonesia</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +62 82128860698</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> shofialaurence@gmail.com</p>
+      
+    </div>
+    <div class="col-sm-7 slideanim" style="margin-top:-30px;">
+      <div id="map-container-google-2" class="z-depth-1-half map-container">
+  <iframe style="width:600px; height:400px; margin-left: 60px;" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jl.%20Ir.%20H.%20Juanda%20No.82,%20Panglayungan,%20Kec.%20Bungursari,%20Tasikmalaya,%20Jawa%20Barat%2046134+(Shofia%20Wedding)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+    <br><br>
+</div>
+
+
+<!--Google map-->
+<div id="portfolio" class="container-fluid text-center bgr" style = "background: linear-gradient(to bottom left, skyblue, pink);width:100%;padding-right:0px;padding-left:0px;">
+    <img src="sofiya.png" style="margin-top:0px; height:670px; width:100%;">
+</div>
+
+<!--Google Maps-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up" style="color: purple"></span>
+  </a>
+    <p>Created by: Shofia Aini Nurjanah-001201800115</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  
+    if (this.hash !== "") {
+  
+      event.preventDefault();
+
+      var hash = this.hash;
+
+     
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+      
+        window.location.hash = hash;
+      });
+    } 
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+});
+
+$(document).ready(function () {  
+
+         $(".bas").click(function () {  
+          $("#bsc").prop("checked" , true)  
+         });  
+         $(".spe").click(function () {  
+          $("#spc").prop("checked" , true)  
+         });  
+         $(".pla").click(function () {  
+         $("#plt").prop("checked" , true)  
+       });  
+     }); 
+     
+
+</script>
+
+</body>
+</html>
